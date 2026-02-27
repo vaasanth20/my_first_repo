@@ -1,2 +1,5 @@
 # my_first_repo
-my first repo 
+Learning Git and Github
+
+this is from the local
+
