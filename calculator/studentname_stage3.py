@@ -1,3 +1,7 @@
+# Name: Vasanth Dhandapani
+# Roll Number: IITP_AIMLTN_2602559
+# Assignment: Python Logic & Flow - Subjective Question
+
 # Stage 3: Student Grade Calculator
 # ----------------------------------
 # This program takes a student's name and marks

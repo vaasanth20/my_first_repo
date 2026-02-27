@@ -1,3 +1,7 @@
+# Name: Vasanth Dhandapani
+# Roll Number: IITP_AIMLTN_2602559
+# Assignment: Python Logic & Flow - Subjective Question
+
 # Stage 2: Basic Calculator with Result Check
 # -------------------------------------------
 # Extends Stage 1 by checking whether the result

@@ -1,3 +1,7 @@
+# Name: Vasanth Dhandapani
+# Roll Number: IITP_AIMLTN_2602559
+# Assignment: Python Logic & Flow - Subjective Question
+
 # Stage 1: Basic Calculator
 # -------------------------
 # This program takes two numbers and an operator
