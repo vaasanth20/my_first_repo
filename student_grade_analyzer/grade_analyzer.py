@@ -130,4 +130,4 @@ averages = process_scores(students)
 classified = classify_grades(averages)
 
 # Task 3: Print the report and capture how many students passed
-total_passed = generate_report(classified)
+total_passed = generate_report(classified, 60)
