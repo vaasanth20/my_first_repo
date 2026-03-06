@@ -3,7 +3,7 @@
 ## Overview
 This program manages a bookstore inventory stored in a JSON file called inventory.json. It reads the current inventory, adds a new book, saves the updated data back to the file, and finally displays all books in a formatted output.
 
-** Starter File — inventory.json **
+**Starter File — inventory.json**
 The initial contents of inventory.json are:
 ```json
 [
@@ -26,7 +26,7 @@ with open("inventory.json", "r") as f:
 print(f"Total books in inventory: {len(inventory)}")
 ```
 
-** Explanation **
+**Explanation**
 
 * import json — imports Python's built-in JSON module for reading and writing JSON data.
 * open("inventory.json", "r") — opens the file in read mode ("r").
@@ -35,7 +35,7 @@ print(f"Total books in inventory: {len(inventory)}")
 * len(inventory) — returns the count of books and prints it to the console.
 
 
-** Expected output: **
+**Expected output:**
 
 ```terminal
 Total books in inventory: 2
@@ -58,7 +58,7 @@ with open("inventory.json", "w") as f:
     json.dump(inventory, f, indent=4)
 ``` 
 
-** Explanation **
+**Explanation**
 
 * new_book — a Python dictionary representing the new book with its four fields.
 * inventory.append(new_book) — adds the new book to the end of the existing list in memory.
@@ -77,14 +77,14 @@ for book in updated_inventory:
     print(f'Title: {book["title"]} | Author: {book["author"]} | Price: ${book["price"]:.2f}')
 ```
 
-** Explanation **
+**Explanation**
 
 * The file is opened and read again to confirm the data was saved correctly (re-reading from disk rather than just using the in-memory list).
 * A for loop iterates over each book dictionary in the list.
 * An f-string formats each book's details into the required output format.
 * {book["price"]:.2f} — formats the price to exactly 2 decimal places (e.g., 9.99 → $9.99).
 
-** Expected output: **
+**Expected output:**
 
 ```terminal
 Title: The Alchemist | Author: Paulo Coelho | Price: $12.99
