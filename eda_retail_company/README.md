@@ -61,6 +61,13 @@ print("\n" + "--"*25 + "\n")
 
 *Output :*
 ```Terminal
+Initial Shape: (200, 6)
+order_id	city	category	order_value	delivery_days	rating
+0	1001	Bangalore	Groceries	4191.0	11.0	4
+1	1002	Chennai	Furniture	4923.0	12.0	1
+2	1003	Mumbai	Groceries	4882.0	13.0	2
+3	1004	Bangalore	Electronics	1848.0	13.0	1
+4	1005	Bangalore	Furniture	1645.0	12.0	1
 
 ```
 
@@ -89,6 +96,44 @@ print("\n" + "--"*25 + "\n")
 
 *Output :*
 ```Terminal
+
+DataFrame Shape: (200, 6)
+
+--------------------------------------------------
+
+Data Types: 
+order_id           int64
+city              object
+category          object
+order_value      float64
+delivery_days    float64
+rating            object
+dtype: object
+
+--------------------------------------------------
+
+Missing Values Count:
+order_id          0
+city              0
+category          0
+order_value      14
+delivery_days    10
+rating           32
+dtype: int64
+
+--------------------------------------------------
+
+Percentage of Missing Values:
+order_id          0.0
+city              0.0
+category          0.0
+order_value       7.0
+delivery_days     5.0
+rating           16.0
+dtype: float64
+
+--------------------------------------------------
+
 
 ```
 
@@ -124,6 +169,16 @@ df.describe()
 
 *Output :*
 ```Terminal
+
+order_id	order_value	delivery_days
+count	200.000000	186.000000	190.000000
+mean	1100.500000	3707.134409	7.810526
+std	57.879185	9238.438378	4.075465
+min	1001.000000	204.000000	1.000000
+25%	1050.750000	1512.000000	4.000000
+50%	1100.500000	2934.000000	8.000000
+75%	1150.250000	3987.500000	12.000000
+max	1200.000000	95000.000000	14.000000
 
 ```
 
@@ -180,6 +235,11 @@ print(corr_matrix)
 
 *Output :*
 ```Terminal
+
+               order_id  order_value  delivery_days
+order_id       1.000000    -0.095503       0.004858
+order_value   -0.095503     1.000000       0.141660
+delivery_days  0.004858     0.141660       1.000000
 
 ```
 
