@@ -38,7 +38,13 @@ df.head()
 
 *Output :*
 ```Terminal
-
+Initial Shape: (200, 6)
+order_id	city	category	order_value	delivery_days	rating
+0	1001	Bangalore	Groceries	4191.0	11.0	4
+1	1002	Chennai	Furniture	4923.0	12.0	1
+2	1003	Mumbai	Groceries	4882.0	13.0	2
+3	1004	Bangalore	Electronics	1848.0	13.0	1
+4	1005	Bangalore	Furniture	1645.0	12.0	1
 ```
 
 ## Task 1 - Inspect & Handle Missing Values
@@ -61,14 +67,8 @@ print("\n" + "--"*25 + "\n")
 
 *Output :*
 ```Terminal
-Initial Shape: (200, 6)
-order_id	city	category	order_value	delivery_days	rating
-0	1001	Bangalore	Groceries	4191.0	11.0	4
-1	1002	Chennai	Furniture	4923.0	12.0	1
-2	1003	Mumbai	Groceries	4882.0	13.0	2
-3	1004	Bangalore	Electronics	1848.0	13.0	1
-4	1005	Bangalore	Furniture	1645.0	12.0	1
-
+DataFrame Shape: (200, 6)
+--------------------------------------------------
 ```
 
 
@@ -82,6 +82,15 @@ print("\n" + "--"*25 + "\n")
 *Output :*
 ```Terminal
 
+Data Types: 
+order_id           int64
+city              object
+category          object
+order_value      float64
+delivery_days    float64
+rating            object
+dtype: object
+--------------------------------------------------
 ```
 
 
@@ -97,21 +106,6 @@ print("\n" + "--"*25 + "\n")
 *Output :*
 ```Terminal
 
-DataFrame Shape: (200, 6)
-
---------------------------------------------------
-
-Data Types: 
-order_id           int64
-city              object
-category          object
-order_value      float64
-delivery_days    float64
-rating            object
-dtype: object
-
---------------------------------------------------
-
 Missing Values Count:
 order_id          0
 city              0
@@ -120,21 +114,7 @@ order_value      14
 delivery_days    10
 rating           32
 dtype: int64
-
 --------------------------------------------------
-
-Percentage of Missing Values:
-order_id          0.0
-city              0.0
-category          0.0
-order_value       7.0
-delivery_days     5.0
-rating           16.0
-dtype: float64
-
---------------------------------------------------
-
-
 ```
 
 
@@ -150,6 +130,15 @@ print("\n" + "--"*25 + "\n")
 *Output :*
 ```Terminal
 
+Percentage of Missing Values:
+order_id          0.0
+city              0.0
+category          0.0
+order_value       7.0
+delivery_days     5.0
+rating           16.0
+dtype: float64
+--------------------------------------------------
 ```
 
 ## Task 2 - Summarize & Visualize
@@ -203,6 +192,8 @@ plt.show()
 
 *Output :*
 
+<img width="764" height="428" alt="image" src="https://github.com/user-attachments/assets/8f212dc5-5856-498b-a9b2-a280e3bb4e2b" />
+
 
 *Code :*
 ```python3
@@ -216,6 +207,8 @@ plt.show()
 ```
 
 *Output :*
+
+<img width="592" height="431" alt="image" src="https://github.com/user-attachments/assets/b2fcad51-2669-4ed8-a843-4ce8a7171251" />
 
 
 # Task 3 - Correlation Analysis
@@ -255,6 +248,8 @@ plt.show()
 ```
 
 *Output :*
+
+<img width="570" height="486" alt="image" src="https://github.com/user-attachments/assets/c86eb38e-8d71-47cb-b695-7ebbb0c5d926" />
 
 
 *Observation from Heatmap*
